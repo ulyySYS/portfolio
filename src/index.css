@@ -1,13 +1,351 @@
+*,*::before,*::after{ box-sizing: inherit;};
+
+html {
+  box-sizing: border-box;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+:root{
+  --color1: #1C3879;
+  --color2: #607EAA;
+  --color3: #EAE3D2;
+  --color4: #F9F5EB;
+  --color5: #B1E1FF;
+  --color6: #100720;
+}
+
 body {
   margin: 0;
+  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  overflow-x: auto;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.App{
+  width: 100%;
+  height: 100%;
+}
+
+
+/*      ....../BURGER MENU/......     */
+/*code copied from: https://codesandbox.io/s/nmy6x9wrj?file=/src/styles.css */
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+
+  /* Our sidebar item styling */
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: #d1d1d1;
+  transition: color 0.2s;
+}
+
+/* Change color on hover */
+.bm-item:hover {
+  color: white;
+}
+
+/* The rest copied directly from react-burger-menu docs */
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  float: left;
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 95%;
+  top: 4.5%;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 0;
+  width: 0;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+/*    HOME    */
+
+#home-container{
+  padding-top: 2rem;
+  background: var(--color3);
+}
+
+#introduction{
+  background: var(--color2);
+  color: var(--color3);
+  padding: 1rem 1rem 18rem 4.1rem;
+  height: 30vh;
+
+}
+
+#introduction h1{
+  margin: 0;
+  font-size: 3em;
+
+}
+
+#introduction h3{
+  width: 50%;
+  font-size: 1.5em;
+  
+}
+
+#projects{
+  width: 100%;
+  position: relative;
+  bottom: 19vh;
+  margin-bottom: 5rem;
+}
+
+#projects-heading{
+  margin: 0 4.1rem 2rem 4.1rem;
+  color: var(--color6);
+  font-size: 2.8em;
+}
+
+#projects-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#projects a{
+  text-decoration: none;
+  color: black;
+  width: 93%;
+  height: 45vh;
+  margin-bottom: 4rem;
+}
+
+.project{
+  /*the div is inside the link tag*/
+  width: 100%;
+  height: 100%;
+  color: black;
+  display: flex;
+  overflow: hidden;
+  border: black 2px solid;
+}
+
+.project:hover{
+  transform: scale(.99);
+}
+
+.div-1{
+  background: var(--color4);
+  width: 48%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div-1 img{
+  width: 88%;
+  height: 88%;
+  border-radius: 2px;
+  box-shadow: -10px 10px 8px -3px;
+}
+
+.div-2{
+  background: var(--color5);
+  padding: .5rem;
+  width: 52%;
+  height: 100%;
+
+}
+
+#contacts-container{
+  background: var(--color2);
+  width: 100%;
+}
+
+#contacts{
+  color: var(--color3);
+  padding: 0 0 18rem 0;
+  height: 30vh;
+  width: 100%;
+  position: relative;
+  bottom: 17vh;
+}
+
+#contacts h1{
+  margin: 0 4.1rem 2rem 4.1rem;
+  color: var(--color6);
+  font-size: 2.8em;
+}
+
+.cards{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  height: 50vh;
+}
+
+.card{
+  width: 28%;
+  padding-top: 1rem;
+  height: 100%;
+  background: var(--color5);
+  color: black;
+  border: var(--color1)  2px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: -10px 10px 10px -5px;
+}
+
+.card:hover{
+  transform: scale(.99);
+  cursor: pointer;
+}
+
+
+/*    PROJECTS    */
+.project-content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--color3);
+}
+
+.project-content img{
+  width: 60%;
+  margin: 1.5rem 1.5rem .9rem 1.5rem;
+  border: black 1px solid;
+  box-shadow: 10px 10px 10px -5px;
+  border-radius: 3px;
+}
+
+.code-tags{
+  width: 59%;
+}
+
+.code-tags span{
+  margin: 0 .8rem 0 0;
+  padding: .1rem .3rem .3rem .3rem;
+  background: #D72323;
+  outline: black 1px solid;
+  color: white;
+  border-radius: 3px;
+}
+
+.project-content p{
+  width: 70%;
+  background: var(--color4);
+  padding: .8rem;
+  border-radius: 10px;
+  font-size: 1.1em;
+  margin-top: 1rem;
+}
+
+.btn-container{
+  margin: 1rem 0 5rem 0;
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+
+
+.btn-container button {
+  width: 150%;
+  height: 170%;
+  border: none;
+  background: #59CE8F;
+  color: black;
+  border: 2px black solid;
+  border-radius: 3px;
+  font-size: 1.1em;
+}
+
+.btn-container button:hover{
+  cursor: pointer;
+  transform: scale(.97);
+}
+
+
+/*    ABOUT ME    */
+#more-container{
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: var(--color4);
+}
+
+#more{
+  background-color: var(--color2);
+  color: var(--color4);
+  width: 100%;
+  padding: 2rem 5rem 0 5rem;
+}
+
+#more h1{
+  font-size: 2.6em;
+}
+
+#more p {
+  width: 87%;
+  font-size: 1.5em;
+  padding-bottom: 3rem;
+}
+
+#sec-para {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+#more div p{
+  margin: 0;
+  font-size: 1em;
 }
