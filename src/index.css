@@ -160,6 +160,7 @@ code {
   text-decoration: none;
   color: black;
   width: 93%;
+  min-height: 45vh;
   height: 45vh;
   margin-bottom: 4rem;
 }
@@ -229,10 +230,14 @@ code {
   height: 50vh;
 }
 
+.cards a{
+    text-decoration: none;
+}
+
 .card{
   width: 28%;
-  padding-top: 1rem;
-  height: 100%;
+  padding-top: 2rem;
+  height: 95%;
   background: var(--color5);
   color: black;
   border: var(--color1)  2px solid;
@@ -241,10 +246,23 @@ code {
   align-items: center;
   box-shadow: -10px 10px 10px -5px;
 }
+.card h2{
+  margin: 2rem 1rem 0 1rem;
+}
 
 .card:hover{
   transform: scale(.99);
   cursor: pointer;
+}
+
+.email h3{
+  text-decoration: underline;
+  margin: 0;
+}
+
+.email:hover{
+  cursor: auto;
+  transform: scale(1);
 }
 
 
@@ -300,7 +318,7 @@ code {
   width: 150%;
   height: 170%;
   border: none;
-  background: #59CE8F;
+  background: white;
   color: black;
   border: 2px black solid;
   border-radius: 3px;
@@ -343,4 +361,61 @@ code {
 #sec-para {
   padding-bottom: 0;
   margin-bottom: 0;
+}
+
+#sec-para b{
+  text-decoration: underline;
+}
+
+
+/* ........../MY ATTEMPTS AT MAKING IT RESPONSIVE/..........*/
+
+@media (max-width: 940px) {
+  .cards{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .card{
+    height: 70%;
+    padding-top: 2rem;
+    width: 70%;
+    margin-bottom: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+  }
+
+  #contacts{
+    height: 100vh;
+  }
+
+  #contacts{
+    bottom: 18vh;
+  }
+
+  #contacts h1{
+    margin: 0 0 2rem 9rem;
+  }
+
+}
+
+@media (max-width: 971px) {
+  .btn-container{
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  #projects a{
+    width: 93%;
+    min-height: 35vh;
+  }
+
+  .bm-burger-button {
+    left: 92%;
+  }
+
+  
+
 }

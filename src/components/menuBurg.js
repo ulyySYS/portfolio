@@ -29,7 +29,7 @@ const MenuBurg = () => {
       </Link>
       <hr/>
       <Link className="menu-item" to="/home" onClick={closeSideBar}>
-        Get In Touch<br/>
+        Contacts<br/>
         (scroll down)
       </Link>
       <hr/>

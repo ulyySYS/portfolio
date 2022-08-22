@@ -1,6 +1,11 @@
 import React from 'react';
 import Projects from './Projects';
 
+//icons
+import linkedin7 from "../pics/linkedin7.png"
+import gmail2 from "../pics/gmail2.png"
+import github4 from "../pics/github4.png"
+
 const Home = () => {
 
   return (
@@ -20,20 +25,21 @@ const Home = () => {
             <div id="contacts">
                 <h1>GET IN TOUCH</h1>
                 <div className='cards'>
-                    <div className='card'>
-                        <img src="" alt="linkedin pic"/>
+                    <a href="https://www.linkedin.com/in/ulysses-audan-641a1a246/" className='card'>
+                        <img src={linkedin7} alt="linkedin pic"/>
                         <h2>
                             Want to talk about Web Development Programming? Let's make a connection!
                         </h2>
-                    </div>
-                    <div className='card'>
-                        <img src="" alt="gmail pic"/>
+                    </a>
+                    <div className='card email'>
+                        <img src={gmail2} alt="gmail pic"/>
                         <h2>Send me an Email!</h2>
+                        <h3>audanulysses320@gmail.com</h3>
                     </div>
-                    <div className='card'>
-                        <img src="" alt="github pic"/>
-                        <h2>Check out my coding projects here</h2>
-                    </div>
+                    <a href="https://github.com/ulyySYS" className='card'>
+                        <img src={github4} alt="github pic"/>
+                        <h2>Check out my coding projects here!</h2>
+                    </a>
                 </div>
             </div>
         </div>
