@@ -11,7 +11,9 @@ const Home = () => {
   return (
     <div id="home-container">
         <div id="introduction">
-            <h1>HI! I am Ulysses Audan</h1>
+            {window.innerWidth > 512 ? <h1>HI! I am Ulysses Audan</h1>:
+                                        <h1>HI! I am <br/> Ulysses Audan</h1>
+                                        }
             <h3>
              I'm a 17-year-old self-taught programmer with skills in web development, mainly React and JavaScript, as well as basic knowledge on Node and Express.
             </h3>
