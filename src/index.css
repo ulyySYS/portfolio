@@ -369,6 +369,11 @@ code {
 
 
 /* ........../MY ATTEMPTS AT MAKING IT RESPONSIVE/..........*/
+@media (max-width: 1160px) {
+  .btn-container{
+    width: 45%;
+  }
+}
 
 @media (max-width: 940px) {
   .cards{
@@ -406,6 +411,7 @@ code {
   }
 }
 
+
 @media (max-width: 768px) {
   #projects a{
     width: 93%;
@@ -416,6 +422,17 @@ code {
     left: 92%;
   }
 
+  .btn-container button {
+    width: 130%;
+    height: 130%;
+  } 
+
+}
+
+@media (max-width: 753px) {
+  .div-2{
+    font-size: .9em;
+   }
 }
 
 @media (max-width: 672px) {
@@ -429,6 +446,13 @@ code {
   }
 
 }
+
+@media (max-width: 636px) {
+  #projects a{
+    /* 45vh is the min-height */
+    height: 51vh;
+  }
+ }
 
 @media (max-width: 627px) {
   .btn-container{
@@ -606,6 +630,10 @@ code {
 }
 
 @media (max-width: 425px) {
+  .bm-burger-button {
+    top: 3.9%;
+  }
+
   #projects a{
     min-height: 80vh;
     height: 80vh;
@@ -658,6 +686,13 @@ code {
 }
 
 @media (max-width: 320px) { 
+  
+
+  .btn-container{
+    width: 90%;
+    margin-left: 5rem;
+  }
+  
   .btn-container button {
     width: 87%;
     height: 87%;

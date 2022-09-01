@@ -4,7 +4,7 @@ const Data = [
         name: "Quiz App",
         urlName: "project-quiz-app",
         img:  require("../pics/quiz-app.png"),
-        basicInfo: "This app provides you with a quiz and gives you an option to make the questions yourself. The website is built on react and uses JSON to store the fifteen questions on the original quiz. When making the quiz yourself, the website gives you a chance to edit and revise your question after you’ve typed them out. After finishing the quiz, you are shown your score, and your results. Green means your answer was correct on that question, and red means your answer was wrong. ",
+        basicInfo: "This app provides you with a quiz and gives you an option to make the questions yourself. The website is built on react and uses JSON to store the fifteen questions on the original quiz. When making the quiz yourself, the website gives you a chance to edit and revise your question after you’ve typed them out. After finishing the quiz, you are shown your score, and your results. ",
         codeTags: ["html", "react", "javascript", "css"]
     },
     {
