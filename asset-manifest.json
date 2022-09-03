@@ -1,17 +1,21 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.d60da6b8.css",
-    "main.js": "/portfolio/static/js/main.aa319965.js",
+    "main.js": "/portfolio/static/js/main.be94cafa.js",
     "static/media/bookstore.png": "/portfolio/static/media/bookstore.52bf44fe1002bc26f5eb.png",
+    "static/media/bookstore-M.jpg": "/portfolio/static/media/bookstore-M.efb75fac20dc82d578a8.jpg",
     "static/media/quiz-app.png": "/portfolio/static/media/quiz-app.29bb376b7079f1b82b04.png",
+    "static/media/weather-forecast-M.jpg": "/portfolio/static/media/weather-forecast-M.31467f9e6f3076fc78cb.jpg",
+    "static/media/country-app-M.jpg": "/portfolio/static/media/country-app-M.d3373ebea251ab2ac0fc.jpg",
+    "static/media/quiz-app-M.jpg": "/portfolio/static/media/quiz-app-M.e70f288fff04d54d832e.jpg",
     "static/media/weather-forecast.png": "/portfolio/static/media/weather-forecast.ac3adc324838556090eb.png",
     "static/media/country-app.png": "/portfolio/static/media/country-app.b65c06e6c197546a5c7d.png",
     "index.html": "/portfolio/index.html",
     "main.d60da6b8.css.map": "/portfolio/static/css/main.d60da6b8.css.map",
-    "main.aa319965.js.map": "/portfolio/static/js/main.aa319965.js.map"
+    "main.be94cafa.js.map": "/portfolio/static/js/main.be94cafa.js.map"
   },
   "entrypoints": [
     "static/css/main.d60da6b8.css",
-    "static/js/main.aa319965.js"
+    "static/js/main.be94cafa.js"
   ]
 }
