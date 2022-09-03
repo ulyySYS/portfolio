@@ -7,7 +7,7 @@ const Project = ({data}) => {
     <Link to={`/${data.urlName}`} >
       <div className='project'>
         <div className="div-1">
-          <img src={data.img} alt="project website pic" />
+          <img src={window.innerWidth > 471 ? data.img : data.imgMobile} alt="project website pic" />
         </div>       
         <div className="div-2">
             <h1>{data.name}</h1>
