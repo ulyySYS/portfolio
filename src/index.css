@@ -630,7 +630,11 @@ code {
 }
 
 @media (max-width: 425px) {
-
+  #projects a{
+    width: 93%;
+    min-height: 32vh;
+    height: 32vh;
+  }
  }
 
  @media (max-width: 375px) {
