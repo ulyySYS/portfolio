@@ -27,7 +27,10 @@ const Home = () => {
             <div id="contacts">
                 <h1>GET IN TOUCH</h1>
                 <div className='cards'>
-                    <a href="https://www.linkedin.com/in/ulysses-audan-641a1a246/" className='card'>
+                    <a href="https://www.linkedin.com/in/ulysses-audan-641a1a246/" 
+                    target="_blank" 
+                    rel="noreferrer" 
+                    className='card'>
                         <img src={linkedin7} alt="linkedin pic"/>
                         <h2>
                             Want to talk about Web Development Programming? Let's make a connection!
@@ -38,7 +41,10 @@ const Home = () => {
                         <h2>Send me an Email!</h2>
                         <h3>audanulysses320@gmail.com</h3>
                     </div>
-                    <a href="https://github.com/ulyySYS" className='card'>
+                    <a href="https://github.com/ulyySYS" 
+                    target="_blank" 
+                    rel="noreferrer" 
+                    className='card'>
                         <img src={github4} alt="github pic"/>
                         <h2>Check out my coding projects here!</h2>
                     </a>
